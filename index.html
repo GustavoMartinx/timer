@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador Circular</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="timer-container">
+        <div class="circle-container">
+            <svg class="circle" viewBox="0 0 36 36">
+                <circle class="circle-background" cx="18" cy="18" r="15.91549431" stroke-width="2"></circle>
+                <circle class="circle-progress" cx="18" cy="18" r="15.91549431" stroke-width="2" stroke-dasharray="100, 100" stroke-dashoffset="100"></circle>
+            </svg>
+            <div class="time-display">
+                <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <label for="input-hours">Horas:</label>
+            <input type="number" id="input-hours" value="00" min="0" max="23" step="1">
+            <label for="input-minutes">Minutos:</label>
+            <input type="number" id="input-minutes" value="05" min="0" max="59" step="1">
+            <label for="input-seconds">Segundos:</label>
+            <input type="number" id="input-seconds" value="00" min="0" max="59" step="1">
+        </div>
+
+        <button id="startButton">Iniciar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

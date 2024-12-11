@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #63a69f, #86c9b8);
+}
+
+.timer-container {
+    text-align: center;
+    position: relative;
+}
+
+.circle-container {
+    position: relative;
+}
+
+.circle {
+    transform: rotate(-90deg);
+}
+
+.circle-background {
+    fill: none;
+    stroke: #ddd;
+}
+
+.circle-progress {
+    fill: none;
+    stroke: #00bcd4;
+    transition: stroke-dashoffset 1s linear;
+    stroke-linecap: round;
+}
+
+.time-display {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 500px) {
+    .time-display {
+        font-size: 2rem;
+    }
+}
